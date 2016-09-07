@@ -49,8 +49,6 @@ public class MainActivity extends AppCompatActivity implements OnFragmentWifiLis
         adapter = new ViewPagerAdapter(getSupportFragmentManager(),dataFragment);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
-        SyncGetXml syncGetXml = new SyncGetXml("http://www.webservicex.net/globalweather.asmx/GetCitiesByCountry?CountryName=colombia",null,this);
-        syncGetXml.conectinoWithServer();
 
 
     }
